@@ -5,423 +5,829 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Arridwan Yasin | Cetak Buku Yasin dan Majmu Syarif</title>
+<title>Arridwan Yasin | Cetak Buku Yasin, Majmu Syarif & Al-Qur'an</title>
 
-<meta name="description" content="Arridwan Yasin melayani cetak Buku Yasin, Majmu Syarif dan Al-Qur'an. Melayani Tangerang Selatan, Jabodetabek dan seluruh Indonesia.">
+<meta name="description" content="Arridwan Yasin melayani cetak Buku Yasin custom, Cover Emas, Fancy Cover, Hardcover, Softcover, Majmu Syarif dan Al-Qur'an. Melayani Tangerang Selatan, Jabodetabek dan seluruh Indonesia.">
 
-<meta name="keywords" content="cetak buku yasin, cetak yasin murah, cetak majmu syarif, cetak al quran, buku yasin custom">
+<meta name="keywords" content="cetak buku yasin, cetak yasin Tangerang Selatan, cetak buku yasin custom, buku yasin cover emas, fancy cover yasin, cetak majmu syarif, cetak al quran">
+
+<meta name="author" content="Arridwan Yasin">
+
+<meta property="og:title" content="Arridwan Yasin - Cetak Buku Yasin">
+<meta property="og:description" content="Cetak Buku Yasin, Majmu Syarif dan Al-Qur'an.">
+<meta property="og:type" content="website">
 
 <style>
+:root {
+  --navy: #081b32;
+  --blue: #153858;
+  --gold: #d8b66c;
+  --gold-light: #f4dfa9;
+  --cream: #faf7ef;
+  --white: #ffffff;
+  --text: #283548;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #182333;
-    background: #fff;
-}
-
-:root {
-    --navy: #081b32;
-    --blue: #153858;
-    --gold: #d8b66c;
-    --cream: #faf7ef;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: white;
+  line-height: 1.6;
 }
 
 .container {
-    width: 90%;
-    max-width: 1150px;
-    margin: auto;
+  width: 92%;
+  max-width: 1180px;
+  margin: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
+/* TOP BAR */
+
+.topbar {
+  background: #061426;
+  color: var(--gold-light);
+  padding: 9px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* HEADER */
+
 header {
-    background: var(--navy);
-    color: white;
-    padding: 20px 0;
+  background: var(--navy);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 5px 20px #0002;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+  min-height: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .logo {
-    color: var(--gold);
-    font-size: 24px;
-    font-weight: bold;
+  color: var(--gold);
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 18px;
-    font-size: 14px;
+.logo small {
+  display: block;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 3px;
 }
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.menu a:hover {
+  color: var(--gold);
+}
+
+.nav-button {
+  background: var(--gold);
+  color: var(--navy) !important;
+  padding: 11px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* HERO */
 
 .hero {
-    background: linear-gradient(120deg, #081b32, #193e61);
-    color: white;
-    padding: 75px 0;
+  background:
+    radial-gradient(circle at top right, #315477, transparent 40%),
+    linear-gradient(120deg, #061426, #153858);
+  color: white;
+  padding: 75px 0;
 }
 
 .hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
 }
 
 .hero h1 {
-    font-family: Georgia, serif;
-    font-size: 48px;
-    line-height: 1.2;
-    margin: 20px 0;
+  font-family: Georgia, serif;
+  font-size: clamp(37px, 5vw, 58px);
+  line-height: 1.15;
+  margin: 20px 0;
 }
 
 .hero h1 span {
-    color: var(--gold);
+  color: var(--gold);
 }
 
 .hero p {
-    line-height: 1.8;
-    color: #e0e7ee;
+  color: #e0e7ef;
+  font-size: 16px;
+  line-height: 1.9;
 }
 
-.hero img {
-    width: 100%;
-    border-radius: 20px;
-    border: 2px solid var(--gold);
+.hero-image img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid var(--gold);
+  box-shadow: 0 20px 50px #0005;
 }
 
-.btn {
-    display: inline-block;
-    background: var(--gold);
-    color: var(--navy);
-    padding: 14px 22px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 25px;
+.button {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 14px 23px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 24px;
+  transition: .3s;
 }
+
+.button:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+/* STATISTIK */
+
+.stats {
+  background: var(--cream);
+  padding: 28px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 20px;
+}
+
+.stats h3 {
+  font-family: Georgia, serif;
+  color: #a77b2f;
+  font-size: 27px;
+}
+
+.stats p {
+  color: #687587;
+  font-size: 13px;
+}
+
+/* SECTION */
 
 section {
-    padding: 70px 0;
+  padding: 75px 0;
 }
 
 .heading {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.heading span {
+  color: #ae853f;
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: bold;
 }
 
 .heading h2 {
-    font-family: Georgia, serif;
-    font-size: 36px;
-    color: var(--navy);
-    margin-bottom: 12px;
+  color: var(--navy);
+  font-family: Georgia, serif;
+  font-size: 38px;
+  margin: 12px 0;
 }
 
 .heading p {
-    color: #687587;
-    line-height: 1.7;
+  color: #687587;
+  max-width: 680px;
+  margin: auto;
+}
+
+/* KATALOG */
+
+.catalog {
+  background: var(--cream);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.filter-btn {
+  border: 1px solid var(--gold);
+  background: white;
+  color: var(--navy);
+  border-radius: 25px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--navy);
+  color: var(--gold);
 }
 
 .products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
-.card {
-    border: 1px solid #eee4d2;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px #0000000d;
+.product-card {
+  background: white;
+  border-radius: 17px;
+  overflow: hidden;
+  border: 1px solid #eee3d0;
+  box-shadow: 0 10px 30px #0000000c;
+  transition: .3s;
 }
 
-.card img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
+.product-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px #0002;
 }
 
-.card-content {
-    padding: 22px;
+.product-card img {
+  width: 100%;
+  height: 310px;
+  object-fit: contain;
+  padding: 10px;
+  background: #f1eee7;
 }
 
-.card h3 {
-    color: var(--navy);
-    font-family: Georgia, serif;
-    font-size: 24px;
-    margin-bottom: 12px;
+.product-info {
+  padding: 22px;
 }
 
-.card p {
-    color: #687587;
-    line-height: 1.7;
-    font-size: 14px;
+.tag {
+  color: #ae853f;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
+
+.product-info h3 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  color: var(--navy);
+  margin: 10px 0;
+}
+
+.product-info p {
+  color: #687587;
+  font-size: 14px;
+  min-height: 65px;
+}
+
+.product-info a {
+  display: inline-block;
+  background: var(--navy);
+  color: var(--gold);
+  text-decoration: none;
+  padding: 12px 17px;
+  border-radius: 25px;
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.product-info a:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.product-card[hidden] {
+  display: none;
+}
+
+/* PROFIL */
 
 .about {
-    background: var(--cream);
+  background: white;
 }
 
 .about-content {
-    max-width: 850px;
-    margin: auto;
-    text-align: center;
+  max-width: 850px;
+  text-align: center;
+  margin: auto;
 }
 
-.about h2 {
-    color: var(--navy);
-    font-family: Georgia, serif;
-    font-size: 36px;
-    margin-bottom: 20px;
+.about-content h2 {
+  font-family: Georgia, serif;
+  color: var(--navy);
+  font-size: 38px;
+  margin: 15px 0;
 }
 
-.about p {
-    line-height: 1.9;
-    color: #596779;
+.about-content p {
+  color: #687587;
+  line-height: 1.9;
 }
 
 .features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 35px;
 }
 
 .feature {
-    background: white;
-    border: 1px solid #eee3ce;
-    border-radius: 12px;
-    padding: 25px;
+  background: var(--cream);
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #eee2ca;
 }
 
 .feature h3 {
-    color: #a77b2f;
-    margin-bottom: 10px;
+  color: #a77b2f;
+  margin-bottom: 10px;
 }
 
+.feature p {
+  font-size: 13px;
+}
+
+/* CARA PESAN */
+
+.steps {
+  background: var(--cream);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.step {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #eee3d0;
+}
+
+.step-number {
+  background: var(--navy);
+  color: var(--gold);
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.step h3 {
+  color: var(--navy);
+  margin: 15px 0 8px;
+  font-family: Georgia, serif;
+}
+
+.step p {
+  font-size: 13px;
+  color: #687587;
+}
+
+/* CTA */
+
 .cta {
-    text-align: center;
-    background: var(--navy);
-    color: white;
+  background: linear-gradient(120deg, #061426, #193c5d);
+  text-align: center;
+  color: white;
 }
 
 .cta h2 {
-    font-family: Georgia, serif;
-    font-size: 36px;
-    margin-bottom: 15px;
+  font-family: Georgia, serif;
+  font-size: 38px;
+  margin-bottom: 15px;
 }
 
 .cta p {
-    line-height: 1.8;
-    color: #d9e0e8;
+  color: #d9e1eb;
 }
 
+/* MAP */
+
 .location {
-    background: var(--cream);
+  background: var(--cream);
 }
 
 .map {
-    width: 100%;
-    height: 380px;
-    border: 0;
-    border-radius: 15px;
-    margin-top: 25px;
+  width: 100%;
+  height: 380px;
+  border: 0;
+  border-radius: 17px;
+  margin-top: 25px;
 }
+
+.location-info {
+  text-align: center;
+  margin-top: 20px;
+  color: #687587;
+}
+
+/* FOOTER */
 
 footer {
-    background: #061426;
-    color: white;
-    text-align: center;
-    padding: 35px 15px;
-    line-height: 2;
+  background: #061426;
+  color: white;
+  padding: 45px 0 20px;
 }
 
-footer span {
-    color: var(--gold);
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
+
+footer h3 {
+  color: var(--gold);
+  font-family: Georgia, serif;
+  margin-bottom: 15px;
+}
+
+footer p,
+footer a {
+  color: #d1d9e3;
+  font-size: 13px;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid #ffffff25;
+  margin-top: 30px;
+  padding-top: 20px;
+  color: #aebdce;
+  font-size: 12px;
+}
+
+/* WHATSAPP */
 
 .whatsapp {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    background: #20b866;
-    color: white;
-    padding: 15px 22px;
-    border-radius: 40px;
-    text-decoration: none;
-    font-weight: bold;
-    z-index: 99;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 200;
+  background: #20b866;
+  color: white;
+  padding: 15px 22px;
+  border-radius: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 25px #0004;
 }
 
-@media(max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
+/* RESPONSIVE */
 
-    nav a {
-        margin: 8px;
-    }
+@media(max-width:850px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
 
-    .hero-content {
-        grid-template-columns: 1fr;
-    }
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .hero h1 {
-        font-size: 36px;
-    }
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .products,
-    .features {
-        grid-template-columns: 1fr;
-    }
+  .menu {
+    gap: 10px;
+  }
+}
 
-    .heading h2 {
-        font-size: 29px;
-    }
+@media(max-width:600px) {
+  nav {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu a {
+    font-size: 11px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero-image img {
+    height: 330px;
+  }
+
+  .products,
+  .features,
+  .steps-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading h2,
+  .about-content h2 {
+    font-size: 30px;
+  }
+
+  section {
+    padding: 55px 0;
+  }
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
+<div class="topbar">
+CETAK BUKU YASIN • MAJMU SYARIF • AL-QUR'AN | MELAYANI SELURUH INDONESIA
+</div>
+
+<!-- HEADER -->
 <header>
 <div class="container">
 <nav>
-<div class="logo">✦ ARRIDWAN YASIN</div>
-<div>
+
+<div class="logo">
+ARRIDWAN YASIN
+<small>CETAK BUKU YASIN</small>
+</div>
+
+<div class="menu">
 <a href="#home">Beranda</a>
 <a href="#produk">Produk</a>
-<a href="#tentang">Tentang Kami</a>
+<a href="#tentang">Profil</a>
+<a href="#cara-pesan">Cara Pesan</a>
 <a href="#lokasi">Lokasi</a>
+<a class="nav-button"
+href="https://wa.me/62881023356554">
+WhatsApp
+</a>
 </div>
+
 </nav>
 </div>
 </header>
 
+<!-- HERO -->
 <section class="hero" id="home">
 <div class="container hero-content">
 
 <div>
-<p>✦ PERCETAKAN BUKU ISLAMI SEJAK 2013</p>
+<div class="eyebrow">PERCETAKAN BUKU ISLAMI SEJAK 2013</div>
 
 <h1>
 Cetak Buku Yasin
-<span>Elegan & Berkualitas</span>
+<span>Elegan & Berkesan</span>
 </h1>
 
 <p>
-Melayani cetak Buku Yasin, Majmu Syarif dan Al-Qur'an.
-Pilihan cover menarik untuk kebutuhan keluarga,
+Arridwan Yasin melayani cetak Buku Yasin,
+Majmu Syarif dan Al-Qur'an dengan pilihan
+desain cover menarik untuk kebutuhan keluarga,
 acara dan kenangan penuh makna.
 </p>
 
-<a class="btn"
-href="https://wa.me/62881023356554">
-PESAN SEKARANG VIA WHATSAPP
+<a class="button"
+href="https://wa.me/62881023356554?text=Assalamualaikum%2C%20saya%20ingin%20konsultasi%20cetak%20Buku%20Yasin">
+KONSULTASI & PESAN SEKARANG
 </a>
 </div>
 
-<img src="assets/buku-yasin-majmu-quran.png"
-alt="Koleksi Buku Yasin dan Al-Qur'an Arridwan Yasin">
+<div class="hero-image">
+<img src="assets/yasin-motif-bunga-custom.jpg"
+alt="Contoh Buku Yasin Custom Arridwan Yasin">
+</div>
 
 </div>
 </section>
 
-<section id="produk">
+<!-- STATISTIK -->
+<div class="stats">
+<div class="container stats-grid">
+
+<div>
+<h3>2013</h3>
+<p>Mulai Melayani</p>
+</div>
+
+<div>
+<h3>50–100</h3>
+<p>Pesanan per Bulan</p>
+</div>
+
+<div>
+<h3>Indonesia</h3>
+<p>Jangkauan Pelayanan</p>
+</div>
+
+</div>
+</div>
+
+<!-- KATALOG -->
+<section class="catalog" id="produk">
 <div class="container">
 
 <div class="heading">
-<h2>Produk Arridwan Yasin</h2>
-<p>Koleksi produk cetak buku Islami pilihan kami.</p>
+<span>KOLEKSI PRODUK</span>
+<h2>Katalog Arridwan Yasin</h2>
+<p>
+Temukan pilihan Buku Yasin, Majmu Syarif
+dan Al-Qur'an untuk kebutuhan Anda.
+</p>
+</div>
+
+<!-- FILTER KATEGORI -->
+<div class="filters">
+<button class="filter-btn active" data-filter="all">Semua Produk</button>
+<button class="filter-btn" data-filter="yasin">Buku Yasin</button>
+<button class="filter-btn" data-filter="custom">Custom</button>
+<button class="filter-btn" data-filter="kitab">Kitab Islami</button>
 </div>
 
 <div class="products">
 
-<div class="card">
-<img src="assets/buku-yasin-majmu-quran.png"
-alt="Cetak Buku Yasin">
-<div class="card-content">
-<h3>Buku Yasin</h3>
+<!-- PRODUK 1 -->
+<div class="product-card" data-category="yasin">
+<img src="assets/yasin-cover-hitam.jpg"
+alt="Buku Yasin Cover Hitam Geometris">
+
+<div class="product-info">
+<span class="tag">KOLEKSI PREMIUM</span>
+<h3>Buku Yasin Cover Hitam</h3>
 <p>
-Cetak Buku Yasin dengan pilihan cover
-elegan, desain menarik dan dapat
-dikonsultasikan sesuai kebutuhan.
+Cover hitam elegan dengan motif geometris
+dan ornamen kaligrafi warna silver.
 </p>
-<a class="btn" href="https://wa.me/62881023356554">
-Pesan Sekarang
+<a href="https://wa.me/62881023356554?text=Saya%20tertarik%20Buku%20Yasin%20Cover%20Hitam">
+TANYA HARGA →
 </a>
 </div>
 </div>
 
-<div class="card">
-<img src="assets/galeri-produk-yasin.png"
+<!-- PRODUK 2 -->
+<div class="product-card" data-category="yasin">
+<img src="assets/yasin-cover-biru.jpg"
+alt="Buku Yasin Cover Biru Ornamen Emas">
 
-<!-- PRODUK 3: YASIN CUSTOM MOTIF BUNGA -->
-
-<div class="produk-box">
-
-  <img
-    src="assets/yasin-motif-bunga-custom.jpg"
-    alt="Cetak Buku Yasin Custom Motif Bunga Arridwan Yasin">
-
-  <div class="produk-info">
-
-    <span class="kategori">CUSTOM COLLECTION</span>
-
-    <h3>Buku Yasin Custom Motif Bunga</h3>
-
-    <p>
-      Buku Yasin dan Tahlil dengan desain
-      bunga mawar, ornamen emas, serta
-      bingkai artistik. Bisa menggunakan
-      nama dan foto sesuai kebutuhan.
-    </p>
-
-    <a href="https://wa.me/62881023356554?text=Saya%20tertarik%20Buku%20Yasin%20Custom%20Motif%20Bunga">
-      PESAN VIA WHATSAPP →
-    </a>
-
-  </div>
+<div class="product-info">
+<span class="tag">FAVORIT PELANGGAN</span>
+<h3>Buku Yasin Cover Biru</h3>
+<p>
+Cover biru dengan ornamen medali
+kaligrafi Allah warna emas.
+</p>
+<a href="https://wa.me/62881023356554?text=Saya%20tertarik%20Buku%20Yasin%20Cover%20Biru">
+TANYA HARGA →
+</a>
+</div>
 </div>
 
-alt="Majmu Syarif">
-<div class="card-content">
+<!-- PRODUK 3 -->
+<div class="product-card" data-category="custom">
+<img src="assets/yasin-motif-bunga-custom.jpg"
+alt="Buku Yasin Custom Motif Bunga">
+
+<div class="product-info">
+<span class="tag">CUSTOM COLLECTION</span>
+<h3>Buku Yasin Motif Bunga</h3>
+<p>
+Desain bunga mawar, bingkai emas
+dan tulisan custom sesuai kebutuhan.
+</p>
+<a href="https://wa.me/62881023356554?text=Saya%20tertarik%20Buku%20Yasin%20Custom%20Motif%20Bunga">
+TANYA HARGA →
+</a>
+</div>
+</div>
+
+<!-- PRODUK 4 -->
+<div class="product-card" data-category="yasin">
+<div style="height:310px;background:#e9e2d2;display:grid;place-items:center;color:#9a773b;font-size:60px">
+✦
+</div>
+<div class="product-info">
+<span class="tag">PREMIUM COLLECTION</span>
+<h3>Hardcover</h3>
+<p>
+Pilihan Buku Yasin dengan cover keras.
+Foto produk menyusul.
+</p>
+<a href="https://wa.me/62881023356554?text=Saya%20ingin%20bertanya%20tentang%20Hardcover">
+TANYA HARGA →
+</a>
+</div>
+</div>
+
+<!-- PRODUK 5 -->
+<div class="product-card" data-category="yasin">
+<div style="height:310px;background:#e9e2d2;display:grid;place-items:center;color:#9a773b;font-size:60px">
+✦
+</div>
+<div class="product-info">
+<span class="tag">CLASSIC COLLECTION</span>
+<h3>Softcover</h3>
+<p>
+Pilihan Buku Yasin dengan cover fleksibel.
+Foto produk menyusul.
+</p>
+<a href="https://wa.me/62881023356554?text=Saya%20ingin%20bertanya%20tentang%20Softcover">
+TANYA HARGA →
+</a>
+</div>
+</div>
+
+<!-- PRODUK 6 -->
+<div class="product-card" data-category="kitab">
+<div style="height:310px;background:#e9e2d2;display:grid;place-items:center;color:#9a773b;font-size:60px">
+✦
+</div>
+<div class="product-info">
+<span class="tag">KOLEKSI ISLAMI</span>
 <h3>Majmu Syarif</h3>
 <p>
-Buku kumpulan doa, shalawat dan
-amalan untuk kebutuhan pribadi
-maupun keluarga.
+Kumpulan doa dan amalan untuk
+kebutuhan pribadi dan keluarga.
+Foto produk menyusul.
 </p>
-<a class="btn" href="https://wa.me/62881023356554">
-Pesan Sekarang
+<a href="https://wa.me/62881023356554?text=Saya%20ingin%20bertanya%20tentang%20Majmu%20Syarif">
+TANYA HARGA →
 </a>
 </div>
 </div>
 
-<div class="card">
-<img src="assets/buku-yasin-majmu-quran.png"
-alt="Al Quran">
-<div class="card-content">
+<!-- PRODUK 7 -->
+<div class="product-card" data-category="kitab">
+<div style="height:310px;background:#e9e2d2;display:grid;place-items:center;color:#9a773b;font-size:60px">
+✦
+</div>
+<div class="product-info">
+<span class="tag">AL-QUR'AN</span>
 <h3>Al-Qur'an</h3>
 <p>
-Layanan cetak dan pemesanan
-Al-Qur'an dengan pilihan produk
-yang dapat dikonsultasikan.
+Pilihan Al-Qur'an untuk kebutuhan
+keluarga dan berbagai keperluan.
+Foto produk menyusul.
 </p>
-<a class="btn" href="https://wa.me/62881023356554">
-Pesan Sekarang
+<a href="https://wa.me/62881023356554?text=Saya%20ingin%20bertanya%20tentang%20Al-Quran">
+TANYA HARGA →
 </a>
 </div>
 </div>
@@ -430,101 +836,220 @@ Pesan Sekarang
 </div>
 </section>
 
+<!-- TENTANG -->
 <section class="about" id="tentang">
 <div class="container about-content">
 
-<h2>Tentang Arridwan Yasin</h2>
+<span class="eyebrow">TENTANG KAMI</span>
+
+<h2>Arridwan Yasin</h2>
 
 <p>
-Arridwan Yasin merupakan usaha percetakan
-yang melayani kebutuhan Buku Yasin,
-Majmu Syarif dan Al-Qur'an sejak tahun 2013.
+Arridwan Yasin merupakan usaha yang bergerak
+di bidang percetakan Buku Yasin, Majmu Syarif
+dan Al-Qur'an sejak tahun 2013.
 
 Kami melayani pelanggan di Tangerang Selatan,
 Jabodetabek dan seluruh wilayah Indonesia.
 
-Kami berkomitmen memberikan pelayanan,
-komunikasi dan hasil cetak sesuai kesepakatan
-dengan pelanggan.
+Dengan model produksi sendiri dan kerja sama
+dengan percetakan lain, kami berupaya memberikan
+layanan yang sesuai dengan kebutuhan pelanggan.
 </p>
 
 <div class="features">
+
 <div class="feature">
-<h3>Sejak 2013</h3>
+<h3>✦ Sejak 2013</h3>
 <p>Berpengalaman melayani kebutuhan cetak.</p>
 </div>
 
 <div class="feature">
-<h3>Custom Design</h3>
+<h3>✦ Desain Custom</h3>
 <p>Pilihan desain dan cover sesuai kebutuhan.</p>
 </div>
 
 <div class="feature">
-<h3>Seluruh Indonesia</h3>
+<h3>✦ Seluruh Indonesia</h3>
 <p>Melayani pesanan dari berbagai daerah.</p>
 </div>
-</div>
 
+</div>
 </div>
 </section>
 
+<!-- CARA PESAN -->
+<section class="steps" id="cara-pesan">
+<div class="container">
+
+<div class="heading">
+<span>PEMESANAN MUDAH</span>
+<h2>Bagaimana Cara Memesan?</h2>
+<p>Proses konsultasi dan pemesanan melalui WhatsApp.</p>
+</div>
+
+<div class="steps-grid">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Hubungi Kami</h3>
+<p>Hubungi WhatsApp Arridwan Yasin.</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>Konsultasi</h3>
+<p>Pilih produk, desain, jumlah dan spesifikasi.</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>Konfirmasi</h3>
+<p>Periksa detail pesanan dan kesepakatan harga.</p>
+</div>
+
+<div class="step">
+<div class="step-number">4</div>
+<h3>Produksi</h3>
+<p>Pesanan diproses sesuai kesepakatan.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CTA -->
 <section class="cta">
 <div class="container">
 
-<h2>Butuh Cetak Buku Yasin?</h2>
+<h2>Wujudkan Buku Yasin Impian Anda</h2>
 
 <p>
-Percayakan kebutuhan cetak Buku Yasin,
-Majmu Syarif dan Al-Qur'an kepada kami.
+Konsultasikan kebutuhan cetak Buku Yasin,
+Majmu Syarif dan Al-Qur'an bersama kami.
 </p>
 
-<a class="btn"
-href="https://wa.me/62881023356554">
-HUBUNGI ARRIDWAN YASIN
+<a class="button"
+href="https://wa.me/62881023356554?text=Assalamualaikum%20Arridwan%20Yasin">
+HUBUNGI KAMI SEKARANG
 </a>
 
 </div>
 </section>
 
+<!-- LOKASI -->
 <section class="location" id="lokasi">
 <div class="container">
 
 <div class="heading">
-<h2>Lokasi Arridwan Yasin</h2>
+<span>LOKASI USAHA</span>
+<h2>Temukan Arridwan Yasin</h2>
 <p>
-Temukan lokasi usaha kami melalui Google Maps.
+Melayani Tangerang Selatan, Jabodetabek
+dan seluruh Indonesia.
 </p>
-
-<a class="btn"
-href="https://maps.app.goo.gl/ap292sjtnvRFrKUJ7"
-target="_blank">
-BUKA GOOGLE MAPS
-</a>
 </div>
 
 <iframe
 class="map"
 src="https://maps.google.com/maps?q=-6.2899305,106.7395166&z=17&output=embed"
 loading="lazy"
-allowfullscreen>
+referrerpolicy="no-referrer-when-downgrade">
 </iframe>
+
+<div class="location-info">
+<p>Jl. Menjangan 3, Tangerang Selatan, Banten, Indonesia</p>
+
+<a class="button"
+href="https://maps.app.goo.gl/ap292sjtnvRFrKUJ7"
+target="_blank">
+BUKA GOOGLE MAPS
+</a>
+</div>
 
 </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<h2><span>ARRIDWAN YASIN</span></h2>
-<p>Cetak Buku Yasin • Majmu Syarif • Al-Qur'an</p>
-<p>WhatsApp: 0881-0233-56554</p>
-<p>Tangerang Selatan | Jabodetabek | Indonesia</p>
-<p>© 2026 Arridwan Yasin. All Rights Reserved.</p>
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+<h3>ARRIDWAN YASIN</h3>
+<p>
+Cetak Buku Yasin, Majmu Syarif
+dan Al-Qur'an.
+</p>
+</div>
+
+<div>
+<h3>MENU WEBSITE</h3>
+<p>
+<a href="#home">Beranda</a><br>
+<a href="#produk">Produk</a><br>
+<a href="#tentang">Tentang Kami</a><br>
+<a href="#lokasi">Lokasi</a>
+</p>
+</div>
+
+<div>
+<h3>HUBUNGI KAMI</h3>
+<p>
+WhatsApp: 0881-0233-56554<br>
+Tangerang Selatan, Banten<br>
+Melayani seluruh Indonesia
+</p>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 Arridwan Yasin. All Rights Reserved.
+</div>
+
+</div>
 </footer>
 
+<!-- WHATSAPP FLOATING -->
 <a class="whatsapp"
-href="https://wa.me/62881023356554"
+href="https://wa.me/6283899539969?text=Assalamualaikum%2C%20saya%20ingin%20bertanya%20tentang%20cetak%20Buku%20Yasin"
 target="_blank">
-WhatsApp Kami
+WHATSAPP KAMI
 </a>
+
+<!-- FILTER PRODUK -->
+<script>
+const filterButtons = document.querySelectorAll(".filter-btn");
+const products = document.querySelectorAll(".product-card");
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+
+    filterButtons.forEach(btn =>
+      btn.classList.remove("active")
+    );
+
+    button.classList.add("active");
+
+    const filter = button.dataset.filter;
+
+    products.forEach(product => {
+
+      if (
+        filter === "all" ||
+        product.dataset.category === filter
+      ) {
+        product.hidden = false;
+      } else {
+        product.hidden = true;
+      }
+
+    });
+  });
+});
+</script>
 
 </body>
 </html>
